@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:id="@+id/pImage"
+                android:transitionName="img"
+                android:scaleType="centerCrop"
+                android:src="@drawable/default_send_image"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:fontFamily="@font/nunito_bold"
+                android:textColor="#000"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:textSize="17dp"
+                android:id="@+id/pname"
+                android:maxLines="2"
+                android:layout_below="@+id/pImage"
+                android:layout_height="wrap_content"
+                android:text="Product Name"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:fontFamily="@font/nunito_bold"
+                android:textColor="#FFAA00"
+                android:layout_marginBottom="20dp"
+                android:id="@+id/pbid"
+                android:textSize="18dp"
+                android:layout_marginStart="20dp"
+                android:maxLines="1"
+                android:layout_height="wrap_content"
+                android:text="Rs 100"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/allImageView"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="#fff"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:fontFamily="@font/nunito_bold"
+                    android:textColor="#000"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="17dp"
+                    android:maxLines="2"
+                    android:layout_below="@+id/pImage"
+                    android:layout_height="wrap_content"
+                    android:text="Product Description"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:textColor="#8E8D8D"
+                    android:id="@+id/pdesc"
+                    android:textSize="14dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_height="wrap_content"
+                    android:text="Product Description"/>
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:textSize="17dp"
+                    android:text="Enter your Bid for this product"
+                    android:textColor="#4F26AF"
+                    android:fontFamily="@font/nunito_bold"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="20dp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/sold"
+                    android:layout_width="match_parent"
+                    android:textSize="17dp"
+                    android:text="The product has been sold to Rahul"
+                    android:textColor="#4F26AF"
+                    android:textAlignment="center"
+                    android:visibility="gone"
+                    android:fontFamily="@font/nunito_bold"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="wrap_content"/>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    app:cardCornerRadius="20dp"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content">
+
+
+                    <LinearLayout
+                        android:id="@+id/bidLayout"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:layout_width="match_parent"
+                            android:id="@+id/bidView"
+                            android:layout_height="160dp"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center"
+                            android:layout_height="wrap_content">
+                            <EditText
+                                android:layout_width="120dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/nunito_bold"
+                                android:text=""
+
+                                android:hint="eg. 200"
+                                android:textAlignment="center"
+                                android:padding="12dp"
+                                android:imeOptions="actionDone"
+                                android:textSize="14dp"
+                                android:maxLength="150"
+                                android:inputType="textMultiLine"
+                                android:id="@+id/bidtxt"
+                                android:layout_margin="20dp"
+                                android:background="@drawable/button3"/>
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/rect_btn"
+                                android:text="Bid"
+                                android:paddingStart="20dp"
+                                android:id="@+id/bidbtn"
+                                android:textSize="13dp"
+                                android:layout_gravity="center"
+                                android:textColor="#fff"
+                                android:paddingEnd="20dp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:fontFamily="@font/nunito_bold"
+                    android:textColor="#000"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:textSize="17dp"
+                    android:maxLines="2"
+                    android:layout_below="@+id/pImage"
+                    android:layout_height="wrap_content"
+                    android:text="Seller"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/sellerProfile"
+                        android:layout_margin="20dp"
+                        android:src="@drawable/default_avatar"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="5dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+
+                            android:layout_width="match_parent"
+                            android:fontFamily="@font/nunito_semibold"
+                            android:textColor="#000"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="20dp"
+                            android:textSize="15dp"
+                            android:maxLines="2"
+                            android:id="@+id/SellerName"
+                            android:layout_height="wrap_content"
+                            android:text="Seller Name"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:fontFamily="@font/nunito_semibold"
+                            android:textColor="#BAB7B7"
+
+                            android:id="@+id/SellerCity"
+                            android:textSize="12dp"
+                            android:maxLength="43"
+                            android:layout_marginStart="20dp"
+                            android:layout_height="wrap_content"
+                            android:text="City"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="10dp"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>

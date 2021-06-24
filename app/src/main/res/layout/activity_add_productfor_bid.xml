@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".addProductforBid">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:text="Add Product for Bid"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:textColor="#4F26AF" />
+
+            <EditText
+                android:id="@+id/productName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:textSize="16dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="30dp"
+                android:background="@android:color/transparent"
+                android:drawableTint="#696969"
+                android:hint="Product Name"
+                android:imeOptions="actionNext"
+                android:inputType="textCapWords"
+                android:padding="15dp"
+                android:textColor="#191919"
+                android:textColorHint="#696969"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:background="#696969" />
+            <EditText
+                android:id="@+id/bid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:textSize="16dp"
+
+                android:layout_marginEnd="30dp"
+                android:background="@android:color/transparent"
+                android:hint="Minimum bid in INR"
+                android:inputType="textEmailAddress"
+                android:drawableTint="#696969"
+                android:padding="15dp"
+                android:imeOptions="actionNext"
+                android:textColor="#191919"
+                android:textColorHint="#696969"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:background="#696969" />
+
+            <EditText
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="30dp"
+                android:imeOptions="actionNext"
+                android:textSize="16dp"
+
+                android:background="@android:color/transparent"
+                android:hint="Description about product"
+
+                android:drawableTint="#696969"
+                android:padding="15dp"
+                android:textColor="#191919"
+                android:inputType="textMultiLine"
+                android:textColorHint="#696969"
+                android:textStyle="bold" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:background="#696969" />
+
+            <EditText
+                android:id="@+id/days"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="30dp"
+                android:background="@android:color/transparent"
+                android:hint="number of days"
+                android:inputType="number"
+                android:textSize="16dp"
+
+                android:drawableTint="#696969"
+                android:padding="15dp"
+                android:textColor="#191919"
+                android:imeOptions="actionDone"
+                android:textColorHint="#696969"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:background="#696969" />
+
+            <TextView
+                android:id="@+id/privacy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="13dp"
+                android:fontFamily="@font/nunito_semibold"
+                android:layout_marginTop="40dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:text="Your ad campaign will run till the number of days you will provide above. Maximum days to run a campaign is 7 days"/>
+
+
+          <androidx.recyclerview.widget.RecyclerView
+              android:layout_width="match_parent"
+              android:id="@+id/Allimages"
+              android:layout_marginTop="20dp"
+              android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/addImage"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="50dp"
+                android:text="Add Product Image"
+                android:textAllCaps="false"
+                android:textColor="#4F26AF"
+                android:textSize="16dp"
+                android:background="@drawable/button3" />
+            <Button
+                android:id="@+id/addProduct"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="80dp"
+                android:textColor="#fff"
+                android:background="@drawable/rect_btn"
+                android:text="Add Product"
+                android:textSize="16dp"
+                android:textAllCaps="false" />
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>

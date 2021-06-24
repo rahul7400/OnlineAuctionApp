@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:text="Enter your Bid for your product"
+        android:layout_gravity="center"
+        android:fontFamily="@font/nunito_bold"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15dp"
+        android:layout_height="wrap_content"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="160dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito_bold"
+            android:text=""
+
+            android:hint="eg. 200"
+            android:textAlignment="center"
+            android:padding="12dp"
+            android:imeOptions="actionDone"
+            android:textSize="14dp"
+            android:maxLength="150"
+            android:inputType="textMultiLine"
+            android:id="@+id/bidtxt"
+            android:layout_margin="20dp"
+            android:background="@drawable/button3"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rect_btn"
+            android:text="Bid"
+            android:paddingStart="20dp"
+            android:id="@+id/bidbtn"
+            android:textSize="13dp"
+            android:layout_gravity="center"
+            android:textColor="#fff"
+            android:paddingEnd="20dp"/>
+    </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"/>
+
+
+</LinearLayout>

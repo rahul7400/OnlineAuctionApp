@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="20dp"
+    android:layout_marginStart="15dp"
+    android:layout_marginEnd="15dp"
+    android:layout_marginBottom="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="200dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/card2"
+        app:cardCornerRadius="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="110dp"
+            android:id="@+id/pimage"
+            android:layout_height="110dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_send_image"/>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="170dp"
+        android:fontFamily="@font/nunito_semibold"
+        android:layout_marginTop="30dp"
+        android:textColor="#000"
+        android:layout_marginStart="20dp"
+        android:textSize="15dp"
+        android:layout_gravity="top|end|center"
+        android:layout_toEndOf="@+id/card2"
+        android:id="@+id/pname"
+        android:maxLines="2"
+        android:layout_height="wrap_content"
+        android:text="Product Name"/>
+
+        <TextView
+            android:layout_width="170dp"
+            android:fontFamily="@font/nunito_semibold"
+            android:textColor="#BAB7B7"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="20dp"
+            android:layout_below="@+id/pname"
+            android:layout_gravity="top|end|center"
+            android:layout_toEndOf="@+id/card2"
+            android:id="@+id/pdesc"
+            android:textSize="12dp"
+            android:maxLines="1"
+            android:layout_height="wrap_content"
+            android:text="Product Description"/>
+
+
+        <ImageView
+            android:id="@+id/delete"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="75dp"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_baseline_delete_24" />
+
+        <TextView
+            android:id="@+id/bidStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bidding is over. Product is sold to Rahul \nEmail - gandhirahul199@gmail.com"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/card2"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

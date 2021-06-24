@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyCampaigns">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:id="@+id/txt"
+        android:fontFamily="@font/nunito_bold"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_gravity=""
+        android:textColor="#3814BA"
+        android:layout_marginBottom="10dp"
+        android:text="My Campaigns"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:elevation="10dp"
+        android:layout_below="@+id/txt"
+        android:id="@+id/myCamp"/>
+
+</RelativeLayout>
