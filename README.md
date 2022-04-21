@@ -1,3 +1,4 @@
+
 # Online Auction App❤
 
 This app is an online auction app which allows user to upload their valuable product and then they can organize an auction for that product
@@ -6,26 +7,43 @@ This app is totally based on Firebase realtime database and firebase storage.
 
 
 # App Screenshots🎉
-This app has no ads and do not contains any in app purchases and is totally free. So if you want you can give it a try.
-Just login and signup
 
-<img src="images/1.jpeg" width="250">
 
-Explore all the valueable and rare <b>Products List</b>👀
+<img src="images/1.jpeg" width="250"> <img src="images/2.jpeg" width="250"> <img src="images/3.jpeg" width="250"> <img src="images/4.jpeg" width="250"> <img src="images/5.jpeg" width="250">
 
-<img src="images/2.jpeg" width="250">
+# Features of the App
 
-Add your own rare product for auction ✔
+ - This app has no ads and do not contains any in app purchases and is totally free. 
+ - Just login and signup
+ - Explore all the valueable and rare <b>Products List</b>👀
+ - Add your own rare product for auction ✔
+ - Here is the product description page ✔
+ - and here you can enter your bid ✔
 
-<img src="images/3.jpeg" width="250">
+# Backend (Firebase)
 
-Here is the product description page ✔
+<img src="images/firebase.png" width="100">
 
-<img src="images/4.jpeg" width="250">
 
-and here you can enter your bid ✔
+**User Database**
 
-<img src="images/5.jpeg" width="250">
+<img src="images/user.png">
+
+
+
+**Product Database**
+
+<img src="images/product.png">
+
+# Configure Firebase 👀
+- Create your own project on firebase. 
+- download google-services.json 
+- Place it in the app folder
+- Setup Realtime database in firebase and enable the database by setting true to read & write in the rules tab of relatime database.
+- Setup Storage in firebase and enable it by setting true to read and write in the rules of storage. 
+- Setup authentication in firebase and enable email/password authentication.
+- You are good to go.👌👌
+
 
 # License
 Licensed under the [Apache Licence 2.0](LICENSE).
