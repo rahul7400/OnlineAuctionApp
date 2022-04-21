@@ -24,16 +24,20 @@ This app is totally based on Firebase realtime database and firebase storage.
 
 <img src="images/firebase.png" width="100">
 
+- **Firebase is a Backend-as-a-Service (Baas).**
+- It provides developers with a variety of tools and services to help them develop quality apps, grow their user base, and earn profit. It is built on Google’s infrastructure.
+- Firebase is categorized as a NoSQL database program, which stores data in JSON-like documents.
 
-**User Database**
+## User Database
 
 <img src="images/user.png">
 
 
 
-**Product Database**
+## Product Database
 
 <img src="images/product.png">
+
 
 # Configure Firebase 👀
 - Create your own project on firebase. 
